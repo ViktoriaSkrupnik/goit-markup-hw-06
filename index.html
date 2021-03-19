@@ -74,43 +74,9 @@
                 <div class="conteiner-hero">
                 <h1 class="section-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button href=""  class="section-button" data-modal-open >Заказать услугу</button>
- <div data-modal class="backdrop is-hidden"> 
-    <div class="modal">
-
-        <button data-modal-close type="button" class="modal-button">
-            <svg class="svg-modal" wght="11" height="11">
-                <use href="images/symbol-defs.svg#icon-Vector-2"></use>
-            </svg>
-            
-
-        </button>
-          <div class="hero-block"> 
-        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="hero-form">
-            
-            <label for="name">Имя</label>
-          <input type="text" name="name" class="hero-input" id="name" />
-
-          <label for="tel"></label>
-          <input type="tel" name="tel" class="hero-input" id="tel"/>
-
-          <label for="email">Почта</label>
-            <input class="hero-input" type="text" name="email"  id="email" />
-
-            <label for="comment"></label>
-            <textarea  name="comment" class="hero-texterea" id="comment" ></textarea>
-
-            <input type="checkbox" name="policy" class="hero-input" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-           
-
-            <button type="submit" disabled>Отправить</button>
-        </form>
-</div>  -->
+ 
     </div>
-</div>            
-    
-</div>
+
 
             </section>
             
@@ -504,7 +470,7 @@
                 <p class="form-title">Подпишитесь на рассылку </p>
                 <form class="form">
                     <label for="email"></label>
-                    <input class="form-input" type="email" name="email" placeholder"E-mail" id="email"/>
+                    <input class="form-input" type="email" name="email" placeholder="E-mail"id="email"/>
                     
             <div class="form-footer">
                     <button class="form-button" type="submit">Подписаться
@@ -524,6 +490,81 @@
 
     </section>
 </footer>
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+
+        <button data-modal-close type="button" class="modal-button">
+            <svg class="svg-modal" wght="11" height="11">
+                <use href="images/symbol-defs.svg#icon-Vector-2"></use>
+            </svg>
+
+
+        </button>
+
+<form class="hero-form">
+    <div class="hero-block">
+        <b class="hero-title">Оставьте свои данные, мы вам перезвоним</b>
+
+
+     
+        <label for="name" class="hero-label"> Имя </label>
+            <!-- <div class="hero-svg"> -->
+        
+    <div class="hero-list">
+        <input type="text" name="name" class="hero-input" id="name" />
+        <svg class="hero-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-Vector-3-2"></use>
+        </svg>
+         </div> 
+        
+        
+   
+
+        <label for="tel" class="hero-label"> Телефон </label>
+        <div class="hero-list">
+        <input type="tel" name="tel" class="hero-input" id="tel" />
+        <svg class="hero-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-2"></use>
+        </svg>
+        </div>
+
+        <label for="mail" class="hero-label">Почта </label>
+        <div class="hero-list">
+        <input class="hero-input" type="email" name="mail" id="mail" />
+        <svg class="hero-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-2"></use>
+        </svg>
+        </div>
+
+        <label for="comment" class="hero-label">Комментарий</label>
+        <textarea name="comment" class="hero-textarea" id="comment" rows="6" placeholder="Введите текст"></textarea>
+    </div>
+    
+    <!-- <div class="hero-botom">
+        <label class= "hero-accept"></label>
+        <!-- <input type="checkbox" name="policy" class="hero-checkbox" id="policy" />  -->
+        <!-- <span class="hero-open">
+            <svg class="" width="13" height="10" class= "hero-icon">
+                <use href="./images/Vector-6-2.svg"> 
+                </use >
+            </svg>
+            </span>
+            
+            <label for="policy" class="hero-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            <input type="checkbox" name="policy" class="hero-checkbox" id="policy" />
+            <span class="hero-open">
+                <svg class="hero-svg" width="16" height="15">
+                    <use href="./images/symbol-defs.svg#icon-Vector-4-2"></use>
+                </svg> --> -->
+                <!-- <div class="hero-text"> -->
+        <!-- <label for="policy" class="hero-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label> -->
+        <!-- </div> -->
+        </span>
+
+        <button type="submit" class="hero-submit" >Отправить</button>
+    </div>
+    </div>
+</form>
 
 
  <script  src="modal.js">

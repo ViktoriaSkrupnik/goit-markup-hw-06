@@ -1,4 +1,6 @@
 :root {
+  --textaria-text: rgba(117, 117, 117, 0.5);
+  --modal-text: rgba(117,117,117,1);
   --blue-text: rgba(33, 150, 243, 1);
   --white-text: rgba(255, 255, 255, 1);
   --grey-text01: rgba(117, 117, 117, 1);

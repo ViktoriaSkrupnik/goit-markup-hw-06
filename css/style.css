@@ -555,6 +555,7 @@ h4 {
 
 .conteiner-footer {
   margin-right: 70px;
+  justify-content: space-between;
 }
 
 .conteiner-fot {
@@ -884,6 +885,7 @@ h4 {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
+  cursor: pointer;
 }
 
 .backdrop.is-hidden {
@@ -966,6 +968,7 @@ h4 {
 
 .form-field {
   margin-left: 93px;
+  padding-top: 2%;
 }
 
 .form-title {
@@ -983,11 +986,14 @@ h4 {
 .form-input {
   width: 358px;
   height: 50px;
+  margin: 0;
+  padding: 0;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--grafite);
   padding-left: 15px;
+
   font-size: 14px;
   line-height: 1.25;
   outline: none;
@@ -998,8 +1004,7 @@ h4 {
   font-style: normal;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1014,15 +1019,17 @@ h4 {
 }
 
 .form-send {
+  position: absolute;
   margin-left: 10px;
   width: 24px;
   height: 24px;
+  transform: translateY(20%);
 }
 
 .form-footer {
   position: relative;
-  display: inline-flex;
-  margin-left: ;
+  display: inline-block;
+  margin-left: 12px;
 }
 
 /* text */
@@ -1043,6 +1050,7 @@ h4 {
 .hero-label {
   position: relative;
   display: inline-block;
+  margin-bottom: 4px;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -1062,6 +1070,10 @@ h4 {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.hero-input:focus + .hero-icon {
+  fill: var(--blue-text);
 }
 
 .hero-input:hover,
@@ -1107,6 +1119,7 @@ h4 {
 
 .hero-list {
   position: relative;
+  cursor: pointer;
 }
 
 .hero-form {
@@ -1114,11 +1127,6 @@ h4 {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-}
-
-.hero-checkbox {
-  margin-left: 9px;
-  display: none;
 }
 
 .hero-submit {
@@ -1131,37 +1139,48 @@ h4 {
   border: none;
   background-color: var(--blue-text);
   color: var(--white-text);
-
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--blue-text); */
+  cursor: pointer;
 }
 
-.hero-label a {
+.hero-checkbox-label a {
   color: var(--blue-text);
 }
 
-.hero-label {
+.hero-checkbox-label {
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--modal-text);
+  cursor: pointer;
 }
 
 .hero-botom {
   margin-top: 17px;
 }
 
- .hero-open:checked + .hero-checkbox{
-  /* border: none; */
+.hero-span {
+  display: inline-block;
+  margin-left: 15px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--nav-text);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.hero-checkbox:checked + .hero-span {
+  border: var(--blue-text);
   background-color: var(--blue-text);
+  background-image: url(../images/Vector-7-2.svg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: contain;
 }
-.hero-checkbox:checked + .hero-accept {
-  /* display: block; */
+
+.hero-checkbox {
+  display: none;
 }
-.hero-accept {
-} */

@@ -186,7 +186,7 @@ ul {
 
 /* герой */
 
-/* .section-hero {
+.section-hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -195,9 +195,61 @@ ul {
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
-.section-hero {
+.conteiner-hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.section-text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  margin: 0;
+  padding-top: 200px;
+}
+
+.section-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+}
+
+.section-button:hover,
+.section-button:focus {
+  background: var(--blue-text);
+  color: var(--white-text);
+}
+
+.section-hero .section-button {
+  max-width: 200px;
+  height: 50px;
+  padding: 10 32px;
+  margin-top: 30px;
+
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--blue-text);
+  color: var(--white-text);
+  text-decoration: none;
+}
+/* .section-hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -260,7 +312,7 @@ ul {
   background: var(--blue-text);
   color: var(--white-text);
   text-decoration: none;
-}
+} */
 
 /* основной блок */
 
